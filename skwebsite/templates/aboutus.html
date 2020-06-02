@@ -1,0 +1,344 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div style=" margin-top:25px; ">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="/">Home</a></li>
+					<li class="breadcrumb-item active">About Us</li>
+				</ol>
+
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active tab1 a" id="mgt-tab" data-toggle="tab"
+									href="#mgt" role="tab" aria-controls="mgt"
+									aria-selected="true">
+									Management
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link a" id="whyus-tab" data-toggle="tab"
+									href="#whyus" role="tab" aria-controls="whyus"
+									aria-selected="false">Why Us?</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link a" id="motivation-tab" data-toggle="tab"
+									href="#motivation" role="tab" aria-controls="motivation"
+									aria-selected="false">Motives</a>
+							</li>
+
+
+							<li class="nav-item ">
+								<a class="nav-link a" id="infra-tab" data-toggle="tab"
+									href="#infra" role="tab" aria-controls="infra"
+									aria-selected="false">Staffing</a>
+							</li>
+						</ul>
+						<div class="tab-content " id="myTabContent">
+							<div class="tab-pane fade show active" id="mgt" role="tabpanel"
+								aria-labelledby="mgt-tab">
+								<div class="row" style="border-radius:10%;line-height:30px;">
+									<div class="col-md-7 text-justify">
+										<p class="pt-4"> Mr.MUTHUKUMAR, an PROPRIETOR of
+											SRIKARA– Multispeciality Professional
+											Training Hub,
+											founder in the year 2000.</p>
+										<p class="pt-4">
+											Mr.C.Muthu Kumar, completed DEEE., B.COM.,
+											PGDCA., in the year 2007,
+											extended a small
+											concern named - “Indian Academy of Career
+											Education” ,
+											a self-service focussed on FASION
+											TECHNOLOGY, runs successfully and gives
+											a growth to add an addition field in
+											ACCOUNTING.
+										</p>
+										<p class="pt-4">
+											ACCOUNTING as a Sales Tax Practitioner,
+											started in the year 2009,
+											starts with only 7 Clients and now grown up
+											with 85 Clients,
+											ACCOUNTING on Taxation added into the field
+											as it is one of my family business,
+											continuing right from the period of my
+											grandfather Mr.Muthuvel,
+											who is the great impact of sowing the
+											SalesTax practitioner -
+											Accounting as a business, and
+											Mr.CHOCKALING.M, my Father, who continues
+											and yeilds it (Sales Tax practitioner –
+											Accounting), which moves
+											in a greater path with number of clients in
+											different companies for many years,
+											- that makes me to add an additional field
+											in my career termed as TALLY ERP.
+										</p>
+
+										<p class="pt-4">
+											I thank almighties who was and were and
+											being a back bone to bring
+											forward me and our concern SRIKARA, with
+											all this, am glad to express
+											my gratitude for my team members who are in
+											this voyage of SRIKARA.
+										</p>
+										<p class="pt-4">
+											The methodology and the environment at
+											SRIKARA ensure well qualified employees and
+											considerable
+											management.
+											<p>
+									</div>
+									<div class="col-md-5 text-center">
+										<img src="{% static 'images/aboutus/abt-mgt.jpg'%}"
+											style="height:675px; width:350px;border-radius:5%;opacity: .3;">
+									</div>
+								</div>
+
+							</div>
+							<div class="tab-pane fade show" id="whyus" role="tabpanel"
+								aria-labelledby="whyus-tab">
+								<div class="row" style="border-radius:10%;line-height:40px;">
+									<div class="col-md-7 text-justify">
+										Our institution provide courses based on student
+										necessities with expert specialties such as,
+										<ul class="pera" >
+											<li class="pt-4"><i class='fas fa-hand-point-right' style='color:#ff5e13'></i>
+												 provide courses for limited batch
+												wise and also for an
+												individual's according to the
+												courses that they prefer.</li>
+											<li class="pt-4"><i class='fas fa-hand-point-right' style='color:#ff5e13'></i>
+												provide courses for the student by
+												describing the
+												present technologies on future
+												upgrading technology in each
+												department at our institute
+												(concern) and let them prefer the
+												course on their choice.</li>
+											<li class="pt-4"><i class='fas fa-hand-point-right' style='color:#ff5e13'></i>
+												provide dedicated team for the
+												students, on quality,
+												wisdom, real-time, succeed and
+												placement assistance by giving
+												expert level trainers.</li>
+											<li class="pt-4"><i class='fas fa-hand-point-right' style='color:#ff5e13'></i>
+												provide strict maintenance on
+												attendance- session
+												login and logout, timing, concepts
+												covered, discipline (all in
+												systematic process).</li>
+											<li class="pt-4"><i class='fas fa-hand-point-right' style='color:#ff5e13'></i>
+												provide lab facility in each
+												department, for each
+												courses, for an individual student.
+											</li>
+											<li class="pt-4"><i class='fas fa-hand-point-right' style='color:#ff5e13'></i>
+												provide valuable certification
+												courses for completed
+												student after conducting the task.
+											</li>
+										</ul>
+
+
+
+
+
+
+
+									</div>
+									<div class="col-md-5  text-center">
+
+										<img src="{% static 'images/aboutus/abt-why2.png'%}"
+											style="height:300px; width:325px;border-radius:10%;opacity: .9;">
+										<img src="{% static 'images/aboutus/abt-whyus.jpg'%}"
+											style="height:300px; width:325px;border-radius:2%;opacity: .9;">
+
+									</div>
+								</div>
+
+							</div>
+							<div class="tab-pane fade show" id="motivation" role="tabpanel"
+								aria-labelledby="motivation-tab">
+
+								<div class="row my-5">
+									<div class="col-sm-6 col-lg-4">
+										<div class="service-block-inner text-justify">
+											<h3>We are Trusted</h3>
+											<p class="pt-4">
+												SRIKARA has Strong background of
+												Charted Accounts and Tax Consultant,
+												for 15 years of experience
+												in this field and now with 150+
+												Clients, and also in Teaching Field
+												for 10 Years.
+											</p>
+											<p class="pt-4">
+												Due to high spread and in need of
+												upgraded technologies, as SRIKARA in
+												part of real time
+												implementation in Tax Consultant
+												(both Training & Development), so we
+												do hereby, real time
+												professionals for students.
+											</p>
+											<div class="text-center">
+												<img src="{% static 'images/aboutus/abt-vision.png'%}"
+													style="border-radius:2%;opacity: .9;height:225px;width:250px;">
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-4">
+										<div class="service-block-inner ">
+											<h3>We are Professional</h3>
+
+
+
+											<p class="text-justify pt-4">ACCOUNTING as a
+												Sales Tax Practitioner, started in
+												the year 2009, starts
+												with only 7 Clients and now grown up
+												with 85 Clients, ACCOUNTING on
+												Taxation.</p>
+											<p class="text-justify pt-4">ACCOUNTING
+												revolution termed as TALLY ERP –
+												Taxation & Sales Tax
+												Practitioner, started in the year
+												2010, implemented with real time
+												clientsfocussed on different
+												companies and in Education Field
+												focussed on students in colleges.
+												we provides professional guidance to
+												learn techniques and ethics. </p>
+											<div class="text-center">
+												<img src="{% static 'images/aboutus/abt-mission.png'%}"
+													style="border-radius:2%;opacity: .9;height:200px;width:250px;">
+											</div>
+
+
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-4">
+										<div class="service-block-inner text-justify">
+											<h3>We are Expert</h3>
+											<p class="pt-4">
+												SRIKARA, a specialized Corporate
+												Training, GST Practitioner, Web
+												Development and Software
+												Solution, in the field of an
+												Information Technology and
+												Application development. SRIKARA
+												combines Development & Training
+												activity in
+												different era.</p>
+											<p class="pt-4"> Hence, the methodology and the
+												environment at SRIKARA ensure well
+												qualified instructors
+												and considerable management.
+											</p>
+											<div class="text-center">
+												<img src="{% static 'images/aboutus/abt-values.png'%}"
+													style="border-radius:2%;opacity: .9;height:225px;width:250px;">
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+
+							<div class="tab-pane fade show" id="infra" role="tabpanel"
+								aria-labelledby="infra-tab">
+								<div class="row" style="border-radius:10%;line-height:40px;">
+									<div class="col-md-7 text-justify">
+										SRIKARA - with the vision of providing Training
+										and Web Development and Software Application
+										Development,
+										which adds the newer dimensions to the technology
+										resolution and there by steer the Global Economic
+										Growth
+										as a whole.
+
+										<p class="pt-4"> Our concern is endowed with excellent
+											infrastructure consists of latest PC’s,
+											Video Projection
+											Systems, Imaging Facilities, Multimedia
+											capable, Internet Wi-Fi facility and fully
+											power back
+											facility
+											and a dedicated team of experienced trained
+											members, who devoted to clients to meet the
+											growing
+											needs
+											of the society. The methodology and the
+											environment at SRIKARA ensure well
+											qualified employees and
+											considerable management. </p>
+										<p class="pt-4">
+											A wide variety of careers, professional,
+											short-term and long term are designed in a
+											planned manner.</p>
+
+									</div>
+									<div class="col-md-5  text-center">
+										<img src="{% static 'images/aboutus/td.jpg'%}"
+											style="height:450px; width:350px;border-radius:2%;opacity: .9;">
+										<!-- <img  src ="{% static 'images/aboutus/2.png'%}"  style="height:225px; width:300px;border-radius:2%;opacity: .9;"> -->
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+
+				<div class="jumbotron" style="text-align:center;">
+					<h2 class="faw"><small>Tally Certification Courses</small> </h2>
+					<marquee behavior="scroll" direction="up" onmouseover="this.stop();"
+						onmouseout="this.start();">
+						<p><a href="{% url 'academy' %}"><b> Tally ACE</b></a></p>
+						<p><a href="{% url 'academy' %}"><b>Tally PRO</b></a></p>
+						<p><a href="{% url 'academy' %}"><b>Tally GURU</b></a></p>
+						<p><a href="{% url 'academy' %}"><b>GST Using Tally ERP9</b></a></p>
+					</marquee>
+				</div>
+				<div class="jumbotron" style="text-align:center;">
+					<h2 class="faw"><small> Full Stack Developer</small> </h2>
+					<marquee behavior="scroll" direction="up" onmouseover="this.stop();"
+						onmouseout="this.start();">
+						<p><a href="{% url 'academy' %}"><b> Java</b></a></p>
+						<p><a href="{% url 'academy' %}"><b>Python</b></a></p>
+						<p><a href="{% url 'academy' %}"><b>.NET(MVC)</b></a></p>
+						<p><a href="{% url 'academy' %}"><b>PHP-MYSQL</b></a></p>
+						<p><a href="{% url 'academy' %}"><b>Android</b></a></p>
+					</marquee>
+
+				</div>
+				<!-- <div class="jumbotron" style="text-align:center;">
+            <h5>Benefits</h5>
+            <p><a href="#">Training by MNC Professionals</a></p>
+            <p><a href="#">Incomaparable Syllabus</a></p>
+            <p><a href="#">Easy Installment Fee</a></p>
+            <p><a href="#">100% Placement Guaranteed</a></p>
+            
+        </div>-->
+
+
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}

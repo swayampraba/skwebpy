@@ -1,0 +1,667 @@
+{% extends "base.html" %}
+{% load static %}
+
+    {% block content %}
+    <style>
+        nav > .nav.nav-tabs{
+
+border: none;
+  color:#fff;
+  background:#272e38;
+  border-radius:0;
+
+}
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active
+{
+border: none;
+  padding: 18px 25px;
+  color:#fff;
+  background:#272e38;
+  border-radius:0;
+}
+
+nav > div a.nav-item.nav-link.active:after
+{
+/* content: ""; */
+position: relative;
+bottom: -60px;
+left: -10%;
+border: 15px solid transparent;
+border-top-color: #ff5e13 ;
+}
+.tab-content{
+background: #fdfdfd;
+  line-height: 25px;
+  border: 1px solid #ddd;
+  border-top:5px solid #ff5e13;
+  border-bottom:5px solid #ff5e13;
+  padding:30px 25px;
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus
+{
+border: none;
+  background: #ff5e13;
+  color:#fff;
+  border-radius:0;
+  transition:background 0.20s linear;
+}
+/* accordion */
+.accordion {
+    background-color: rgb(36, 35, 35);
+  color: #ff5e13;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  
+  text-align: left;
+ 
+  font-size: 18px;
+  font-weight:600;
+  transition: 0.4s;
+}
+
+.active1, .accordion:hover {
+  background-color: #ccc;
+  color:black;
+}
+
+.accordion:after {
+  content: '\002B';
+color: #ff5e13;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  font-size: 15px;
+
+}
+
+.active1:after {
+  content: "\2212";
+  color:black;
+}
+
+.panel {
+    border:1px solid grey;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/* accordion ends */
+/* card carousel start */
+
+/* card carousel ends */
+/* ad start */
+.js-slideshow {
+  --fade: 1.8s;
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 55.25%;
+  box-shadow: 0 6px 30px #0002;
+}
+
+/* each animated slide should be a figure and a direct child of .js-slideshow */
+.js-slideshow > figure {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  transition: opacity var(--fade) ease;
+}
+
+.js-slideshow > figure:first-child {
+  opacity: 1;
+}
+
+.js-slideshow img {
+  height: 200%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* optional caption */
+.js-slideshow figcaption {
+  margin-top: 0.8em;
+  font-size: 1.1rem;
+  line-height: 1.3em;
+  letter-spacing: 0.03em;
+  font-weight: 100;
+  font-style: italic;
+  color: black;
+  font-weight:bold;
+  opacity: 0.7;
+}
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+ 
+    .js-slideshow img {
+      width:50%;
+        height:250px;
+        margin-left:125px;
+  }
+  .popular-posts {
+    margin-top: 30px;
+}
+}
+
+/* ad end */
+        </style>
+    <div style=" margin-top:25px; " >
+        <div class="container">
+            <div class="row">              
+                <div class="col-md-9">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active">Blog</li>
+                    </ol>
+                    <!-- heading - academy -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="title-all text-center">
+                                <h1>SRIKARA - Blog</h1>
+                                <p>Welcome to this Corporate World</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 ">
+                          <nav>
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                              <a class="nav-item nav-link active" id="nav-college-tab" data-toggle="tab" href="#nav-college" role="tab" aria-controls="nav-college" aria-selected="true">College</a>
+                              <a class="nav-item nav-link" id="nav-internship-tab" data-toggle="tab" href="#nav-internship" role="tab" aria-controls="nav-internship" aria-selected="false">Internships</a>
+                              <a class="nav-item nav-link" id="nav-career-tab" data-toggle="tab" href="#nav-career" role="tab" aria-controls="nav-career" aria-selected="false">Career</a>
+
+                            </div>
+                          </nav>
+                          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                            <div class="tab-pane m-3 fade show active" id="nav-college" role="tabpanel" aria-labelledby="nav-college-tab">
+                               
+                              <p class="pera m-4 text-justify"> SRIKARA-Multispecialty Professional Training Hub concentrates on Institutional Training by providing, online Webinars due to lockdown period.
+                              Webinar conducts by real time expert with 15+ of years of experience    </p>
+                              <dl>
+                                <dt>Criteria</dt>
+                                <dd>- Seminars, workshops, value added courses at our concern as well as to an institutional. </dd>
+                              </dl>
+                              <dl>
+                                <dt>Tie ups </dt>
+                                <dd>– Institutional for Education in Real time Training, 
+                                  Web Development on Real Time Projects	 </dd>
+                 
+                              </dl>
+                              <dl>
+                                <dt>Boon </dt>
+                                <dd>– If your Institution is new to our service, contact us or visit us or we comes to your institutions on your favor, for your valuable needs. </dd>
+                                <dd>– You’re Visits our Service. </dd>
+                  
+                              </dl>
+                              <div class="pt-4 text-center">
+                                <a  href="{% url 'contact' %}" class="btn btn-primary">Mail us to Apply</a>
+                              </div>
+                           
+
+                            </div>
+                            <div class="tab-pane fade m-4" id="nav-internship" role="tabpanel" aria-labelledby="nav-internship-tab">
+                             <p class="pera m-4 text-justify">
+                              We are offering internships to students, who are willing to develop the applications on their own. The students will be provided with training and opportunity to work on the real time projects. Our experts will be guiding them across all the phases of the project.
+                             </p>
+                            
+                                <b clas="pt-4"> KEY ADVANTAGES</b>
+                                <p class="pera">  1. Experience in Real time projects</p>
+                                  <p class="pera">  2. Expert guidance to learn techniques and ethics</p>
+                                    <p class="pera">  3. Hands on experience across all the life cycle of projects (Requirement Gathering,    Designing, Coding, Testing and release) </p>
+                                      <p class="pera">  4. Understand the challenges while working in versioning tools in corporate environment</p>
+                                        <p class="pera">   5. Students will be imbibed into the institution if they perform well.</p>
+                                        <p class="pera">   6. We provide a digital Certificate.</p>
+                                      
+                              <div class="pt-4 text-center">
+                                        <a  href="{% url 'contact' %}" class="btn btn-primary">Mail us to Apply</a>
+                                      </div>
+                            </div>
+                            <div class="tab-pane fade m-3" id="nav-career" role="tabpanel" aria-labelledby="nav-career-tab">
+                            
+                              
+                                <b>Mock Interview</b>
+                                <p class="m-4 text-justify"> After the completion of course, We do conduct mock interviews for students by our
+                                 technical experts from the corporate industry to share their views on each
+                                  individual student and provide them the necessary confidence, 
+                                  we guide and advice on their strength, weaknesses and the ways to improve them in
+                                   the college premises to attend their placements. 
+                              </p>
+                              
+                                <b>Technical Interview</b>
+                                <p class=" m-4 text-justify">
+                                Each student will be individually called upon by our experts to mentor them to
+                                 give counseling to them and provide them confidence and motivate them on the next
+                                  steps to be taken to improve themselves and to increase their chance for getting
+                                   placed. 
+                              </p>
+                             
+                                <b>Key Guidance</b>
+                                <p class="m-4 text-justify">
+                                Thus due to this mock interview the student will feel comfortable and confident while facing the real interview.  
+                              </p>
+                              <div class="text-center">
+                                <a  href="{% url 'contact' %}" class="btn btn-primary">Mail us to Apply</a>
+                              </div>
+                            </div>
+                         
+                          </div>
+                        
+                        </div>
+                      </div>
+          <!-- accordion Start -->
+          <div class="title-all pt-4 text-center">
+            <h1>SRIKARA - Outstanding Preference</h1>
+            <p>Way of Difference</p>
+        </div>
+          <div class="row pt-0">
+            <div class="col-sm-6">
+              <button class="accordion">Webinar</button>
+              <div class="panel">
+               
+                <ul class="pera">
+                  <li><i class="fas fa-chevron-circle-right"></i> Conducts in Online</li>
+                  <li><i class="fas fa-chevron-circle-right"></i> 100% Valuable</li>
+                  <li><i class="fas fa-chevron-circle-right"></i> Speaker by Industrial Expert</li>
+                  <li><i class="fas fa-chevron-circle-right"></i> Easy to Understand</li>
+                
+                </ul>
+              </div>
+                <button class="accordion">Seminar</button>
+                <div class="panel">
+                  <p class="pera">
+                    	Srikara - Handles the seminar on real time technologies and we also invite the topic on institution basis. 
+                  </p>
+                  <p class="pera pt-4">
+                    Based upon the topics needed from Institutions ‘ll also be handled.
+                </p>
+                </div>
+                
+                <button class="accordion">Workshops</button>
+                <div class="panel">
+                  <p class="pera">
+                    If one’s experience with SRIKARA on seminar, will forward to proceed on WORKSHOPS, A real time practical world.
+                </p>
+                <p class="pera pt-4">
+                  For new invites from Institutions directly to workshops is also applicable. 
+              </p>
+                </div>
+                
+                <button class="accordion">On Campus training</button>
+                <div class="panel">
+                 
+                  <ul class="pera">
+                    <li><i class="fas fa-chevron-circle-right"></i> Accounts</li>
+                    <li><i class="fas fa-chevron-circle-right"></i> Software</li>
+                    <li><i class="fas fa-chevron-circle-right"></i> Multimedia</li>
+                  
+                  </ul>
+                </div>
+               
+                </div>
+                
+                <div class="col-sm-6">
+                  <button class="accordion">Tie Ups</button>
+                  <div class="panel">
+                  
+                    <ul class="pera">
+                      <li><i class="fas fa-chevron-circle-right"></i> Value Added Course</li>
+                      <li><i class="fas fa-chevron-circle-right"></i> Job Oriented Course</li>
+                      <li><i class="fas fa-chevron-circle-right"></i> Add on Course</li>
+                    
+                    </ul>
+                    <p class="pera">
+                      We do tie ups in College and concern in Coimbatore and Madurai
+                    </p>
+                  </div>
+                <button class="accordion">Corporate training</button>
+                <div class="panel">
+                  <ul class="pera">
+                    <li><i class="fas fa-chevron-circle-right"></i> Current Trend in Technology!!!</li>
+                    <li><i class="fas fa-chevron-circle-right"></i> Multi - Training courses</li>
+                    <li><i class="fas fa-chevron-circle-right"></i> Real time based interactions in each training courses</li>
+                    <li><i class="fas fa-chevron-circle-right"></i> Knowledge in growth based on career wisdom</li>
+                    <li><i class="fas fa-chevron-circle-right"></i> Projects in every course</li>
+                    <li><i class="fas fa-chevron-circle-right"></i> Intellectual method to handle the technology in professionalism</li>
+                  </ul>
+                </div>
+                
+                <button class="accordion">Soft Skills </button>
+                <div class="panel">
+                  <ul class="pera">
+                    <li><i class="fas fa-chevron-circle-right"></i> Personality Enrichment</li>
+                    <li><i class="fas fa-chevron-circle-right"></i> Communication Skill</li>
+                    <li><i class="fas fa-chevron-circle-right"></i> Technical Skill</li>
+                    <li><i class="fas fa-chevron-circle-right"></i> Career Coping Skill</li>
+                   
+                  </ul>
+                </div>
+                
+                <button class="accordion">Final Year Projects</button>
+                <div class="panel">
+                  <p class="pera">
+                    SRIKARA- MULTISPECIALITY PROFESSIONAL TRAINING HUB assists project & training for each review for individual students who are expecting out for real time & industry based final year projects. 
+                  </p>
+                </div>
+                  
+               
+                </div>
+          </div>
+          <!-- accordion end -->
+          <!-- layout -->
+          <div class="title-all pt-4 text-center">
+            <h1>SRIKARA - Attention</h1>
+            <p>Quality & Trust Management</p>
+        </div>
+        <div class="box-add-products">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="offer-box-products">
+                           
+<video width="380" height="425"  muted autoplay>
+    <source src="{% static 'images/blog/v1.mp4'%}" type="video/mp4">
+  </video>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="offer-box-products">
+                            <video width="380" height="425" muted controls autoplay>
+                                <source src="{% static 'images/blog/jury.mp4'%}" type="video/mp4">
+                              </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!-- layout ends -->
+          <!-- jumbotron  -->
+          <div class="title-all pt-4 text-center">
+            <h1>SRIKARA - Views</h1>
+            <p>We Share Techy Wisdom for Candidates</p>
+        </div>
+          <div class="row">
+              <div class="col-sm-4">
+                <div class="jumbotron" style="text-align:center;">
+                    <h2 class="faw"><small>Tally Certification Courses</small> </h2>
+                      <marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                      <p><a href="{% url 'academy' %}"><b> Tally ACE</b></a></p>
+                      <p><a href="{% url 'academy' %}"><b>Tally PRO</b></a></p>
+                      <p><a href="{% url 'academy' %}"><b>Tally GURU</b></a></p>
+                      <p><a href="{% url 'academy' %}"><b>GST Using Tally ERP9</b></a></p></marquee>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="jumbotron" style="text-align:center;">
+                    <h2 class="faw">Full Stack Developer</h2>
+                    <marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                    <p><a href="{% url 'academy' %}"><b> Java</b></a></p>
+                    <p><a href="{% url 'academy' %}"><b>Python</b></a></p>
+                    <p><a href="{% url 'academy' %}"><b>.NET(MVC)</b></a></p>
+                    <p><a href="{% url 'academy' %}"><b>PHP-MYSQL</b></a></p>
+                    <p><a href="{% url 'academy' %}"><b>Android</b></a></p></marquee>
+                   
+               </div> 
+            </div>
+            <div class="col-sm-4">
+                <div class="jumbotron" style="text-align:center;">
+                  <h2 class="faw">Benefits</h2>
+                  <marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                    <p><a href="#"><b>Training by MNC Professionals</b></a></p>
+                    <p><a href="#"><b>Incomaparable Syllabus</b></a></p>
+                    <p><a href="#"><b>Online Webinar</b></a></p>
+                    <p><a href="#"><b>Online Intellectual Classes</b></a></p>
+                    <p><a href="#"><b>Easy Installment Fee</b></a></p>
+                    <p><a href="#"><b>100% Placement Guaranteed</b></a></p></marquee>
+                    
+                </div>
+            </div>
+            
+          </div>
+         
+          
+ 
+          <!-- jumbotron ends -->
+<!-- md-10 -->
+
+                            </div>
+                          
+                     
+                 
+<!-- filter button -->
+
+
+
+
+
+
+
+
+                    
+                    <div class="col-md-3 ">
+                        <!-- ad banner -->
+                        <h2 class="faw">Our Focus</h2>
+                        <div id="jsSlideshow" data-speed="5.5" data-fade="3.2" class="js-slideshow">
+                         
+                            <figure><img src="{% static 'images/blog/a2.jpg'%}" class="image-fluid" alt="">
+                              <figcaption class="text-center">
+                                Srikara Conducts Webinar with quality and easy communication.
+                              </figcaption>
+                            </figure>
+                            <figure><img src="{% static 'images/blog/a1.gif'%}" class="image-fluid" alt="">
+                              <figcaption class="text-center">Handles with Real time practical oriented data.</figcaption>
+                            </figure>
+                            <figure><img src="{% static 'images/blog/a3.png'%}" class="image-fluid" alt="">
+                              <figcaption class="text-center">100% placement guaranteed.</figcaption>
+                            </figure>
+                            <figure><img src="{% static 'images/blog/a4.jpg'%}" class="image-fluid" alt="">
+                              <figcaption class="text-center">100% practical training.</figcaption>
+                            </figure>
+                            <figure><img src="{% static 'images/blog/a5.gif'%}" class="image-fluid" alt="">
+                              <figcaption class="text-center">Full Stack Developer.</figcaption>
+                            </figure>
+                            <figure><img src="{% static 'images/blog/a6.jpg'%}" class="image-fluid" alt="">
+                              <figcaption class="text-center">Both Batches & Individual Preference.</figcaption>
+                            </figure>
+                            <figure><img src="{% static 'images/blog/a7.png'%}" class="image-fluid" alt="">
+                              <figcaption class="text-center">Multimedia - become an innovative designer</figcaption>
+                            </figure>
+                            <figure><img src="{% static 'images/blog/a8a.jpg'%}" class="image-fluid" alt="">
+                              <figcaption class="text-center">We do all kinds of Accounting Services.</figcaption>
+                            </figure>
+                            <figure><img src="{% static 'images/blog/a9.jpg'%}" class="image-fluid" alt="">
+                              <figcaption class="text-center">GST E-Filing & Registration.</figcaption>
+                            </figure>
+                            <figure><img src="{% static 'images/blog/a10.png'%}" class="image-fluid" alt="">
+                              <figcaption class="text-center">We do Website Creation & Development.</figcaption>
+                            </figure>
+                          </div>
+                        <!-- ad banner ends -->
+            <!-- popular post start -->
+            <section class="section">
+                        <div class="popular-posts">
+                            <h2 class="faw">Popular Posts</h2>
+
+                            <ul class="p-0">
+                                <li class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <figure><a href="#"><img src="{% static 'images/blog/s1.png'%}" alt=""></a></figure>
+
+                                    <div class="entry-content">
+                                        <h3 class="entry-title"><a href="#">GST Awareness Program</a></h3>
+
+                                        <div class="posted-date">Jan' 06, 2020</div>
+                                    </div>
+                                </li>
+
+                                <li class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <figure><a href="#"><img src="{% static 'images/blog/s2.jpg'%}" alt=""></a></figure>
+
+                                    <div class="entry-content">
+                                        <h3 class="entry-title"><a href="#">Career Guidance Skills </a></h3>
+
+                                        <div class="posted-date">Jan' 29, 2020</div>
+                                    </div>
+                                </li>
+
+                                <li class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <figure><a href="#"><img src="{% static 'images/blog/s3.jpg'%}" alt=""></a></figure>
+
+                                    <div class="entry-content">
+                                        <h3 class="entry-title"><a href="#">Internship at SRIKARA</a></h3>
+
+                                        <div class="posted-date">Feb' 05, 2020</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                        <!-- popular post end -->
+                        <!-- upcoming events -->
+                       
+                        <div class="upcoming-events">
+                            <h2 class="faw">Upcoming Events</h2>
+
+                            <div class="p-0">
+                              <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <figure><img src="{% static 'images/blog/u2.PNG'%}" alt=""></figure>
+
+                                <div class="entry-content">
+                                    <h3 class="entry-title">Seminar now in Webinar</h3>
+
+                                    <div class="post-metas d-flex flex-wrap align-items-center">
+                                        <span class="posted-date">Jan 01, 2020 &nbsp;</span>
+                                        <p class="event-location">for all Arts & Science College Students </p>
+                                    </div>
+
+                                    <p>At your place for a group to attend.</p>
+                                </div>
+                            </div>
+
+                                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                    <figure><img src="{% static 'images/blog/u1.PNG'%}" alt=""></figure>
+
+                                    <div class="entry-content">
+                                        <h3 class="entry-title">Conducts Online Training</h3>
+
+                                        <div class="post-metas d-flex flex-wrap align-items-center">
+                                            <span class="posted-date">Jun' 20, 2020 &nbsp;</span>
+                                            <p class="event-location">Weekend and Weekdays are Available</p>
+                                        </div>
+
+                                        <p>Incomaparable syllabus with Unbelievabe fee.</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                  <figure><img src="{% static 'images/blog/u3.PNG'%}" alt=""></figure>
+
+                                  <div class="entry-content">
+                                      <h3 class="entry-title">Get trained & Place Easily</h3>
+
+                                      <div class="post-metas d-flex flex-wrap align-items-center">
+                                          <span class="posted-date">Jun' 2020 to Aug' 2020 &nbsp;</span>
+                                          <p class="event-location"> 
+                                            A right choice to choose & gain</p>
+                                      </div>
+
+                                      <p>Wisdom our Passion..</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    
+                        <!-- upcoming events end -->
+                        <!-- featured cause -->
+                        <section class="section">
+                        <div class="featured-cause">
+                            <h2 class="faw">Featured Causes</h2>
+
+                            <div class="cause-wrap">
+                                <figure class="m-0 position-relative">
+                                   <img class="image-fluid" src="{% static 'images/blog/f1.png'%}" alt="">
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0 "><a href="#">Best training to start</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Practial oriented, Real time oriented, Meet Expert for Mock Interview and get Place.</p>
+                                    </div><!-- .entry-content -->
+
+                                    <div class="fund-raised w-100">
+                                        <div class="fund-raised-bar-3 barfiller">
+                                            <div class="tipWrap">
+                                                <span class="tip"></span>
+                                            </div><!-- .tipWrap -->
+
+                                            <span class="fill" data-percentage="83"></span>
+                                        </div><!-- .fund-raised-bar -->
+
+                                        <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
+                                            <div class="fund-raised-total mt-4">
+                                                Raised 1: register for GST Awareness Program <p>
+                                                <a href="{% url 'contact' %}" class="btn btn-secondary">Apply</a></p>
+                                            </div><!-- .fund-raised-total -->
+                                            <div class="fund-raised-total mt-4">
+                                              Raised 2: register for Software Technology Program 
+                                              <p> <a href="{% url 'contact' %}" class="btn btn-secondary">Apply</a></p>
+                                          </div><!-- .fund-raised-total -->
+                                            <div class="fund-raised-goal mt-4">
+                                                <!-- Goal: $70 000 -->
+                                            </div><!-- .fund-raised-goal -->
+                                        </div><!-- .fund-raised-details -->
+                                    </div><!-- .fund-raised -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div>
+                    </section>
+                        <!-- featured end cause -->
+                
+                    
+                 
+            </div>
+            </div>
+            </div>
+         
+            </div>
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active1");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+(() => {
+  const ss = document.querySelector("#jsSlideshow");
+  const a = ss.querySelectorAll("figure");
+  ss.style.setProperty("--fade", ss.dataset.fade + "s");
+  let i = 0;
+  setInterval(() => {
+    i++;
+    a[(i - 1) % a.length].style.opacity = 0;
+    a[i % a.length].style.opacity = 1;
+  }, ss.dataset.speed * 1000);
+})();
+            </script>
+     {% endblock content %}
+   

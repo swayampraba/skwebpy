@@ -1,0 +1,514 @@
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+      <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+      <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+      <!------ Include the above in your HEAD tag ---------->
+      
+      <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
+{% extends "base.html" %}
+{% load static %}
+
+    {% block content %}
+    <div style=" margin-top:25px; " >
+    <div class="container">
+      <div class="row">              
+        <div class="col-md-10">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active">Gallery</li>
+            </ol>
+      <div class="row">
+        <div class="col-md-3 mb-3">
+            <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active pillcolor" id="seminar-tab" data-toggle="tab" href="#seminar" role="tab" aria-controls="seminar" aria-selected="true">
+          <b>Seminar @ College</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pillcolor" id="sk-tab" data-toggle="tab" href="#sk" role="tab" aria-controls="sk" aria-selected="false">
+          <b>@ SRIKARA</b></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link pillcolor" id="ws-tab" data-toggle="tab" href="#ws" role="tab" aria-controls="ws" aria-selected="false">
+          <b>Workshops</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pillcolor" id="joc-tab" data-toggle="tab" href="#joc" role="tab" aria-controls="joc" aria-selected="false">
+          <b>JOC Program</b></a>
+      </li>
+    </ul>
+        </div>
+        <!-- /.col-md-4 -->
+            <div class="col-md-9">
+          <div class="tab-content tab-content1" id="myTabContent">
+      <div class="tab-pane fade show active" id="seminar" role="tabpanel" aria-labelledby="tally-tab">
+      <h2 class="text-center faw">Seminar</h2>
+      
+      <div class="container">
+        <div class="row">
+          <div class="row">
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Seminar @ College"
+                         data-image="{% static 'images/gallery/college/1.jpg' %}"
+                         data-target="#image-gallery">
+                          <img class="img-thumbnail"
+                               src="{% static 'images/gallery/college/1.jpg' %}"
+                               alt="Another alt text">
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Seminar @ College"
+                         data-image="{% static 'images/gallery/college/2.jpg' %}"
+                         data-target="#image-gallery">
+                          <img class="img-thumbnail"
+                               src="{% static 'images/gallery/college/2.jpg' %}"
+                               alt="Another alt text">
+                      </a>
+                  </div>
+      
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Seminar @ College"
+                         data-image="{% static 'images/gallery/college/3.jpg' %}"
+                         data-target="#image-gallery">
+                          <img class="img-thumbnail"
+                               src="{% static 'images/gallery/college/3.jpg' %}"
+                               alt="Another alt text">
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Seminar @ College"
+                         data-image="{% static 'images/gallery/college/4.png' %}"
+                         data-target="#image-gallery">
+                          <img class="img-thumbnail"
+                               src="{% static 'images/gallery/college/4.png' %}"
+                               alt="Another alt text">
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Seminar @ College"
+                         data-image="{% static 'images/gallery/college/5.png' %}"
+                         data-target="#image-gallery">
+                          <img class="img-thumbnail"
+                               src="{% static 'images/gallery/college/5.png' %}"
+                               alt="Another alt text">
+                      </a>
+                  </div>
+      
+      
+      
+                 
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Seminar @ College"
+                         data-image="{% static 'images/gallery/college/7.jpg' %}"
+                         data-target="#image-gallery">
+                          <img class="img-thumbnail"
+                               src="{% static 'images/gallery/college/7.jpg' %}"
+                               alt="Another alt text">
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Seminar @ College"
+                         data-image="{% static 'images/gallery/college/8.PNG' %}"
+                         data-target="#image-gallery">
+                          <img class="img-thumbnail"
+                               src="{% static 'images/gallery/college/8.PNG' %}"
+                               alt="Another alt text">
+                      </a>
+                  </div>
+      
+      
+      
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Seminar @ College"
+                         data-image="{% static 'images/gallery/college/9.PNG' %}"
+                         data-target="#image-gallery">
+                          <img class="img-thumbnail"
+                               src="{% static 'images/gallery/college/9.PNG' %}"
+                               alt="Another alt text">
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Seminar @ College"
+                         data-image="{% static 'images/gallery/college/10.JPG' %}"
+                         data-target="#image-gallery">
+                          <img class="img-thumbnail"
+                               src="{% static 'images/gallery/college/10.JPG' %}"
+                               alt="Another alt text">
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Seminar @ College"
+                         data-image="{% static 'images/gallery/college/19.jpg' %}"
+                         data-target="#image-gallery">
+                          <img class="img-thumbnail"
+                               src="{% static 'images/gallery/college/19.jpg' %}"
+                               alt="Another alt text">
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Seminar @ College"
+                       data-image="{% static 'images/gallery/college/18.jpg' %}"
+                       data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                             src="{% static 'images/gallery/college/18.jpg' %}"
+                             alt="Another alt text">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Seminar @ College"
+                     data-image="{% static 'images/gallery/college/20.jpg' %}"
+                     data-target="#image-gallery">
+                      <img class="img-thumbnail"
+                           src="{% static 'images/gallery/college/20.jpg' %}"
+                           alt="Another alt text">
+                  </a>
+              </div>
+             
+           
+         
+              </div>
+      
+      
+         
+        </div>
+      </div>
+      </div>
+      <div class="tab-pane fade" id="sk" role="tabpanel" aria-labelledby="sk-tab">
+      <h2 class="text-center faw">Event @ SRIKARA</h2>
+      <div class="container">
+        <div class="row">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="training @ SRIKARA"
+                 data-image="{% static 'images/gallery/sk/1.jpg' %}"
+                 data-target="#image-gallery">
+                  <img class="img-thumbnail"
+                       src="{% static 'images/gallery/sk/1.jpg' %}"
+                       alt="Another alt text">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="training @ SRIKARA"
+                 data-image="{% static 'images/gallery/sk/2.jpg' %}"
+                 data-target="#image-gallery">
+                  <img class="img-thumbnail"
+                       src="{% static 'images/gallery/sk/2.jpg' %}"
+                       alt="Another alt text">
+              </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="training @ SRIKARA"
+                 data-image="{% static 'images/gallery/sk/3.jpg' %}"
+                 data-target="#image-gallery">
+                  <img class="img-thumbnail"
+                       src="{% static 'images/gallery/sk/3.jpg' %}"
+                       alt="Another alt text">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="training @ SRIKARA"
+                 data-image="{% static 'images/gallery/sk/4.jpg' %}"
+                 data-target="#image-gallery">
+                  <img class="img-thumbnail"
+                       src="{% static 'images/gallery/sk/4.jpg' %}"
+                       alt="Another alt text">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="training @ SRIKARA"
+                 data-image="{% static 'images/gallery/sk/5.jpg' %}"
+                 data-target="#image-gallery">
+                  <img class="img-thumbnail"
+                       src="{% static 'images/gallery/sk/5.jpg' %}"
+                       alt="Another alt text">
+              </a>
+          </div>
+
+
+
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="training @ SRIKARA"
+                 data-image="{% static 'images/gallery/sk/6.jpg' %}"
+                 data-target="#image-gallery">
+                  <img class="img-thumbnail"
+                       src="{% static 'images/gallery/sk/6.jpg' %}"
+                       alt="Another alt text">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="training @ SRIKARA"
+               data-image="{% static 'images/gallery/sk/7.jpg' %}"
+               data-target="#image-gallery">
+                <img class="img-thumbnail"
+                     src="{% static 'images/gallery/sk/7.jpg' %}"
+                     alt="Another alt text">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="training @ SRIKARA"
+             data-image="{% static 'images/gallery/sk/8.jpg' %}"
+             data-target="#image-gallery">
+              <img class="img-thumbnail"
+                   src="{% static 'images/gallery/sk/8.jpg' %}"
+                   alt="Another alt text">
+          </a>
+      </div>
+      <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="training @ SRIKARA"
+           data-image="{% static 'images/gallery/sk/10.jpg' %}"
+           data-target="#image-gallery">
+            <img class="img-thumbnail"
+                 src="{% static 'images/gallery/sk/10.jpg' %}"
+                 alt="Another alt text">
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="training @ SRIKARA"
+         data-image="{% static 'images/gallery/sk/11.jpg' %}"
+         data-target="#image-gallery">
+          <img class="img-thumbnail"
+               src="{% static 'images/gallery/sk/11.jpg' %}"
+               alt="Another alt text">
+      </a>
+  </div>
+  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="training @ SRIKARA"
+       data-image="{% static 'images/gallery/sk/12.jpg' %}"
+       data-target="#image-gallery">
+        <img class="img-thumbnail"
+             src="{% static 'images/gallery/sk/12.jpg' %}"
+             alt="Another alt text">
+    </a>
+</div>
+                
+            
+      
+      
+      
+             
+              
+               
+              </div>
+      
+      
+              
+        </div>
+      </div> 
+
+      </div>
+      <div class="tab-pane fade" id="ws" role="tabpanel" aria-labelledby="ws-tab">
+      <h2 class="text-center faw">Workshops</h2>
+      <div class="container">
+        <div class="row">
+          <div class="row">
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Workshops"
+                         data-image="{% static 'images/gallery/ws/1.jpg' %}"
+                         data-target="#image-gallery">
+                          <img class="img-thumbnail"
+                               src="{% static 'images/gallery/ws/1.jpg' %}"
+                               alt="Another alt text">
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Workshops"
+                         data-image="{% static 'images/gallery/ws/2.jpg' %}"
+                         data-target="#image-gallery">
+                          <img class="img-thumbnail"
+                               src="{% static 'images/gallery/ws/2.jpg' %}"
+                               alt="Another alt text">
+                      </a>
+                  </div>
+      
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Workshops"
+                         data-image="{% static 'images/gallery/ws/3.jpg' %}"
+                         data-target="#image-gallery">
+                          <img class="img-thumbnail"
+                               src="{% static 'images/gallery/ws/3.jpg' %}"
+                               alt="Another alt text">
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Workshops"
+                         data-image="{% static 'images/gallery/ws/4.jpg' %}"
+                         data-target="#image-gallery">
+                          <img class="img-thumbnail"
+                               src="{% static 'images/gallery/ws/4.jpg' %}"
+                               alt="Another alt text">
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Workshops"
+                         data-image="{% static 'images/gallery/ws/5.jpg' %}"
+                         data-target="#image-gallery">
+                          <img class="img-thumbnail"
+                               src="{% static 'images/gallery/ws/5.jpg' %}"
+                               alt="Another alt text">
+                      </a>
+                  </div>
+      
+      
+      
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                      <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Workshops"
+                         data-image="{% static 'images/gallery/ws/6.jpg' %}"
+                         data-target="#image-gallery">
+                          <img class="img-thumbnail"
+                               src="{% static 'images/gallery/ws/6.jpg' %}"
+                               alt="Another alt text">
+                      </a>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Workshops"
+                       data-image="{% static 'images/gallery/ws/7.jpg' %}"
+                       data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                             src="{% static 'images/gallery/ws/7.jpg' %}"
+                             alt="Another alt text">
+                    </a>
+                </div>
+                
+             
+           
+        
+             
+              
+               
+              </div>
+      
+      
+              
+        </div>
+      </div> 
+      
+      </div>
+      <div class="tab-pane fade" id="joc" role="tabpanel" aria-labelledby="joc-tab">
+        <h2 class="text-center faw">Job Oriented Course</h2>
+        <div class="container">
+          <div class="row">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Job Oriented Course"
+                   data-image="{% static 'images/gallery/joc/1.png' %}"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="{% static 'images/gallery/joc/1.png' %}"
+                         alt="Another alt text">
+                </a>
+            </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Job Oriented Course"
+                           data-image="{% static 'images/gallery/joc/3.png' %}"
+                           data-target="#image-gallery">
+                            <img class="img-thumbnail"
+                                 src="{% static 'images/gallery/joc/3.png' %}"
+                                 alt="Another alt text">
+                        </a>
+                    </div>
+        
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Job Oriented Course"
+                           data-image="{% static 'images/gallery/joc/2.png' %}"
+                           data-target="#image-gallery">
+                            <img class="img-thumbnail"
+                                 src="{% static 'images/gallery/joc/2.png' %}"
+                                 alt="Another alt text">
+                        </a>
+                    </div>
+                   
+                  
+        
+        
+        
+                  
+                   
+                  
+               
+             
+          
+               
+                
+                 
+                </div>
+        
+        
+                
+          </div>
+        </div> 
+        
+        </div>
+    </div>
+  
+        </div>
+        <!-- /.col-md-8 -->
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <img src="{% static 'images/gallery/visit.gif' %}" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+            
+     
+      <div class="jumbotron" style="text-align:center;">
+        <h2 class="faw"><small>Tally Certification Courses</small> </h2>
+          <marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+          <p><a href="{% url 'academy' %}"><b> Tally ACE</b></a></p>
+          <p><a href="{% url 'academy' %}"><b>Tally PRO</b></a></p>
+          <p><a href="{% url 'academy' %}"><b>Tally GURU</b></a></p>
+          <p><a href="{% url 'academy' %}"><b>GST Using Tally ERP9</b></a></p></marquee>
+      </div>
+      <div class="jumbotron" style="text-align:center;">
+        <h2 class="faw">Full Stack Developer</h2>
+        <marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+        <p><a href="{% url 'academy' %}"><b> Java</b></a></p>
+        <p><a href="{% url 'academy' %}"><b>Python</b></a></p>
+        <p><a href="{% url 'academy' %}"><b>.NET(MVC)</b></a></p>
+        <p><a href="{% url 'academy' %}"><b>PHP-MYSQL</b></a></p>
+        <p><a href="{% url 'academy' %}"><b>Android</b></a></p></marquee>
+       
+   </div>
+  <!-- <div class="jumbotron" style="text-align:center;">
+      <h5>Benefits</h5>
+      <p><a href="#">Training by MNC Professionals</a></p>
+      <p><a href="#">Incomaparable Syllabus</a></p>
+      <p><a href="#">Easy Installment Fee</a></p>
+      <p><a href="#">100% Placement Guaranteed</a></p>
+      
+  </div>-->
+  
+
+</div>
+      </div>
+      
+    </div>
+ 
+  </div>
+    <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="image-gallery-title"></h4>
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <img id="image-gallery-image"  class="modalimg img-responsive col-md-12" src="">
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                  </button>
+
+                  <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- /.container -->
+    {% endblock content %}

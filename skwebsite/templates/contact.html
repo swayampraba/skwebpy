@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% load static %}
+
+    {% block content %}
+    <div style=" margin-top:25px;  " >
+        <div class="container">
+            <div class="row">              
+                <div class="col-md-10">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active">Contact Us</li>
+                    </ol>
+                    <!-- heading - academy -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="title-all text-center">
+                                <h1>SRIKARA - Contact Us</h1>
+                                <p>Welcome to this Corporate World</p>
+                                <div class="container">
+                                    <div class="row">
+                                    <div class="col-sm-6">
+                                    <form id="f1">
+                                    <fieldset><legend class="faw">Drop us a Mail <span ><small> </small></span></legend>
+                                    <div class="form-group">
+                                    <!-- <label for="Name" >First Name: </label> -->
+                                    <input type="text" class="form-control" placeholder="Enter your First name" id="fn" onblur="validatFName(); " required /> </span>
+                                    <div id="msgfn" class="msgfn"></div>
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <!-- <label for="Name" >Last Name: </label> -->
+                                        <input type="text" class="form-control" placeholder="Enter your Last name" id="ln" onkeyup="validatLName(); " required /> 
+                                        <div id="msgln" class="msgln"></div>
+                                            
+                                        </div>
+                                        <div class="form-group">
+                                            <!-- <label for="email">E-mail:</label> -->
+                                            <input class="form-control" type="email" onkeyup="ValidateEmail()" id="uemail" placeholder="Enter Mail-Id" required/>
+                                            <span id="msgem"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <!-- <label for="phone">Phone</label>  -->
+                                                <input class="form-control" type="text" required  id="ph"  maxlength="10" onkeyup="validatePhone()" placeholder="Enter Phone Number"/> 
+                                                <div id="msgph" class="msgph"></div>
+                                                </div>
+                                                <div class="form-group" onblur="validateGender()">
+                                                    <!-- <label for=Gender: ></label> -->
+                                                    <input  type="radio" value="male" id="m" name="gender"/>Male
+                                                    <input  type="radio" value="female" id="f" name="gender"/>Female
+                                                    <span id="msgrbg" class="span"></span>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <!-- <label for="Name" >Last Name: </label> -->
+                                                        <input type="textarea" class="form-control" placeholder="How may I assist you?"  required /> 
+                                                       
+                                                            
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input class="btn btn-warning" type="submit" name="submit_reg" value="Submit">
+                                                            </div>
+                                                  
+                                    </fieldset>
+                                    </form>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <br>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15665.36065773304!2d76.96705722749672!3d11.013084424578162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85855dd435111%3A0xeffa1c006d4c13bb!2sSrikara%20-%20MultiSpeciality%20Training%20Hub!5e0!3m2!1sen!2sin!4v1575150891226!5m2!1sen!2sin"
+                                         width="450" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+
+                        </div>
+                    </div>
+<!-- filter button -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="{% static 'images/gallery/visit.gif' %}" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+                    </div>
+                    <div class="col-md-2">
+            
+                        <div class="jumbotron" style="text-align:center;">
+                            <h2 class="faw"><small>Tally Certification Courses</small> </h2>
+                            <marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                                <p><a href="#"><b> Tally ACE</b></a></p>
+                                <p><a href="#"><b>Tally PRO</b></a></p>
+                                <p><a href="#"><b>Tally GURU</b></a></p>
+                                <p><a href="#"><b>GST Using Tally ERP9</b></a></p></marquee>
+                        </div>
+                        <div class="jumbotron" style="text-align:center;">
+                            <h2 class="faw">Full Stack Developer</h2>
+                          <marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                            <p><a href="#"><b> Java</b></a></p>
+              <p><a href="#"><b>Python</b></a></p>
+              <p><a href="#"><b>.NET(MVC)</b></a></p>
+              <p><a href="#"><b>PHP-MYSQL</b></a></p>
+              <p><a href="#"><b>Android</b></a></p></marquee>
+                         
+                     </div>
+                    <!-- <div class="jumbotron" style="text-align:center;">
+                        <h5>Benefits</h5>
+                        <p><a href="#">Training by MNC Professionals</a></p>
+                        <p><a href="#">Incomaparable Syllabus</a></p>
+                        <p><a href="#">Easy Installment Fee</a></p>
+                        <p><a href="#">100% Placement Guaranteed</a></p>
+                        
+                    </div>-->
+                    
+                 
+            </div>
+            </div>
+            </div>
+            </div>
+     {% endblock content %}
+   

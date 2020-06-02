@@ -1,0 +1,295 @@
+{% extends "base.html" %}
+{% load static %}
+
+    {% block content %}
+    <div style=" margin-top:25px; " >
+        <div class="container">
+            <div class="row">              
+                <div class="col-md-10">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active">Web Solutions</li>
+                    </ol>
+                    <!-- heading - academy -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="title-all text-center">
+                                <h1>SRIKARA - Web Solutions</h1>
+                                <p>Welcome to this TechDesign World</p>
+                            </div>
+                        </div>
+                    </div>
+                       <div class="row">
+                            <div class="col-md-4 card-container">
+                                <div class="card-flip">
+                                  <!-- Card 1 Front -->
+                                  <div class="card front">
+                                    <span class="fa fa-4x fa-smile-o text-center"></span>
+                                    <div class="card-block">
+                                        <h2 class="card-title text-center faw"><b>Digital Marketing</b></h2>
+                                      <h6 class="card-subtitle mb-2 text-dark text-center"><b>Spread your business over the world</b></h6>
+                                      <p class="card-text text-center">
+                                         Flourish your business on Internet by developing the website.
+                                      </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Content Making</li>
+                                        <li class="list-group-item">Instant Changes</li>
+                                        <li class="list-group-item">Banner Design Simplicity</li>
+                                        <li class="list-group-item">More Interactive</li>
+                                       
+                                      </ul>
+                                      <div class="card-block">
+                                        <p class="card-text text-center">Going dynamic is the best to choose
+                                             since creating a very simple site with certain pages.</p>
+                                      </div>
+                                  </div>
+                                  <!-- End Card 1 Front -->
+                          
+                                  <!-- Card 1 Back -->
+                                  <div class="card back">
+                                    <div class="card-header text-center">
+                                      <h2>Guidances</h2>
+                                    </div>
+                                    <div class="card-block pt-5">
+                                      <h4 class="card-title text-center"><b>Preference</b></h4>
+                                      <p class="card-text">
+                                        <ul class="list-group list-group-flush text-center">
+                                          <li class="list-group-item">Advertising</li>
+                                          <li class="list-group-item">Data Collection</li>
+                                          <li class="list-group-item">SEO</li>
+                                          <li class="list-group-item">Social Media Network Coverage</li>
+                                       
+                                          
+                                         
+                                        </ul>
+                                      </p>
+                                      <div class="text-center pt-5">
+                                     
+                                      
+                                        <a href="{% url 'contact' %}" class="btn btn-primary">Enquire Us</a>
+                                      </div>
+                                    </div>
+                                  </div>
+
+    
+                                  <!-- End Card 1 Back -->
+                                </div>
+                              </div>
+                              <!-- End Card 1 -->
+                          
+                              <!-- Card 2 -->
+                              <div class="col-md-4 card-container">
+                                <div class="card-flip">
+                                  <!-- Card 2 Front -->
+                                  <div class="card front">
+                                    <img src="{% static 'images/solutions/w3.png'%}" class="card-img-top img-fluid">
+                                    <div class="card-block">
+                                        <h2 class="card-title text-center faw"><b>Web Solutions</b></h2>
+                                      <p class="card-text">
+                                        <ul class="list-group list-group-flush text-center">
+                                            <li class="list-group-item">Website Development</li>
+                                            <li class="list-group-item">Web Hosting</li>
+                                            <li class="list-group-item">Website Services</li>
+                                            
+                                           
+                                          </ul>
+                                      </p>
+                                      <p class="card-text text-center"><small class="text-muted">
+                                        <b>  We Guide on your Preferences</b>
+                                      </small></p>
+                                    </div>
+                                  </div>
+                                  <!-- End Card 2 Front -->
+                          
+                                  <!-- Card 2 Back -->
+                                  <div class="card back">
+                                    <div class="card-header text-center">
+                                      <h2>Features</h2>
+                                    </div>
+                                    <div class="card-block pt-5">
+                                      <h4 class="card-title text-center"><b>Provisions</b></h4>
+                                      <p class="card-text">
+                                        <ul class="list-group list-group-flush text-center">
+                                            <li class="list-group-item">Maintenance</li>
+                                            <li class="list-group-item">Updating Guidances</li>
+                                            <li class="list-group-item">Renewal</li>
+                                            
+                                           
+                                          </ul>
+                                      </p>
+                                      <div class="text-center pt-5">
+                                     
+                                      
+                                        <a href="{% url 'contact' %}" class="btn btn-primary">Enquire Us</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- End Card 2 Back -->
+                                </div>
+                              </div>
+                              <!-- End Card 2 -->
+                          
+                              <!-- Card 3 -->
+                              <div class="col-md-4 card-container">
+                                <div class="card-flip">
+                                  <!-- Card 3 Front -->
+                                  <div class="card front">
+                                    <span class="fa fa-4x fa-smile-o text-center"></span>
+                                    <div class="card-block">
+                                        <h2 class="card-title text-center faw"><b>Static Website<br> Design</b></h2>
+                                      <h6 class="card-subtitle mb-2 text-dark text-center"><b>Stable Design</b></h6>
+                                      <p class="card-text text-center">
+                                         Give a chance for your Start up business on Internet
+                                      </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Design Quality</li>
+                                        <li class="list-group-item">Navigation System</li>
+                                        <li class="list-group-item">Domain Provisions</li>
+                                        <li class="list-group-item">Basic view and Corposrate View</li>
+                                       
+                                      </ul>
+                                      <div class="card-block">
+                                        <p class="card-text text-center">
+                                            Let the world knows your business is present in the internet world
+                                        </p>
+                                      </div>
+                                  </div>
+                                  <!-- End Card 3 Front -->
+                          
+                                  <!-- Card 3 Back -->
+                                  <div class="card back">
+                                    <div class="card-header text-center">
+                                      <h2>Guidances</h2>
+                                    </div>
+                                    <div class="card-block pt-5">
+                                      <h4 class="card-title text-center"><b>Preference</b></h4>
+                                      <p class="card-text">
+                                        <ul class="list-group list-group-flush text-center">
+                                            <li class="list-group-item">Outline of the Business</li>
+                                            <li class="list-group-item">Hosting </li>
+                                            <li class="list-group-item">Services</li>
+                                            
+                                           
+                                          </ul>
+                                      </p>
+                                      <div class="text-center pt-5">
+                                     
+                                      
+                                        <a href="{% url 'contact' %}" class="btn btn-primary">Enquire Us</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- End Card 3 Back -->
+                                </div>
+                              </div>
+                              <!-- End Card 3 -->
+                       
+                </div>
+                
+<div class="row">
+   
+    <div class="col-sm-12">
+        <div id="stage2">
+         
+            <div id="rotator2" style="animation-name: rotator2;-webkit-animation-name: rotator2; -moz-animation-name: rotator2; -ms-animation-name: rotator2;">
+            <a href="1.jpg"><img src="{% static 'images/solutions/w6.png'%}" class="img-fluid" ></a>
+            <a href="1.jpg"><img src="{% static 'images/solutions/w9.png'%}" class="img-fluid" ></a>
+            <a href="1.jpg"><img src="{% static 'images/solutions/w11.png'%}" class="img-fluid" ></a>
+           
+            </div>
+            </div>
+    </div>
+   
+</div>
+                             
+                            </div>
+                    
+<!-- filter button -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                    <div class="col-md-2">
+            
+                        <div class="jumbotron" style="text-align:center;">
+                            <h2 class="faw"><small>Tally Certification Courses</small> </h2>
+                              <marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                              <p><a href="{% url 'academy' %}#"><b> Tally ACE</b></a></p>
+                              <p><a href="{% url 'academy' %}"><b>Tally PRO</b></a></p>
+                              <p><a href="{% url 'academy' %}"><b>Tally GURU</b></a></p>
+                              <p><a href="{% url 'academy' %}"><b>GST Using Tally ERP9</b></a></p></marquee>
+                          </div>
+                          <div class="jumbotron" style="text-align:center;">
+                            <h2 class="faw">Full Stack Developer</h2>
+                            <marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                            <p><a href="{% url 'academy' %}"><b> Java</b></a></p>
+                            <p><a href="{% url 'academy' %}"><b>Python</b></a></p>
+                            <p><a href="{% url 'academy' %}"><b>.NET(MVC)</b></a></p>
+                            <p><a href="{% url 'academy' %}"><b>PHP-MYSQL</b></a></p>
+                            <p><a href="{% url 'academy' %}"><b>Android</b></a></p></marquee>
+                           
+                       </div>
+                    <!-- <div class="jumbotron" style="text-align:center;">
+                        <h5>Benefits</h5>
+                        <p><a href="#">Training by MNC Professionals</a></p>
+                        <p><a href="#">Incomaparable Syllabus</a></p>
+                        <p><a href="#">Easy Installment Fee</a></p>
+                        <p><a href="#">100% Placement Guaranteed</a></p>
+                        
+                    </div>-->
+                    
+                 
+            </div>
+            </div>
+            </div>
+            </div>
+            <script type="text/javascript">
+
+                // Original JavaScript code by Chirp Internet: www.chirp.com.au
+                // Please acknowledge use of this code by including this header.
+              
+                document.addEventListener("DOMContentLoaded", function() {
+              
+                  var rotateComplete = function() {
+                    with(target.style) {
+                      webkitAnimationName = MozAnimationName = msAnimationName = "";
+                    }
+                    target.appendChild(arr[0]);
+                    setTimeout(function(el) {
+                      with(el.style) {
+                        webkitAnimationName = MozAnimationName = msAnimationName = "rotator2";
+                      }
+                    }, 0, target);
+                  };
+              
+                  var target = document.getElementById("rotator2");
+                  var arr = target.getElementsByTagName("a");
+              
+                  target.addEventListener("webkitAnimationEnd", rotateComplete, false);
+                  target.addEventListener("animationend", rotateComplete, false);
+                  target.addEventListener("MSAnimationEnd", rotateComplete, false);
+              
+                }, false);
+              
+              </script>
+     {% endblock content %}
+ 

@@ -1,0 +1,524 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRIKARA</title>
+   
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+     <link rel="stylesheet" href="{% static 'animate.css/animate.min.css' %}">
+      <!-- Styles -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+     <!-- Responsive CSS -->
+     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+  
+   
+</head>
+<body>  
+ <!-- Start Main Top -->
+ <div class="main-top">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+
+              <div class="our-link">
+                  <ul>
+                    <li><a href="#"><i class="fa fa-user s_color">&#xf2a0;</i> 0422-4354999</a></li>
+                      <li><a href="#"><i class="fab fa-whatsapp faw"></i> 9843093936</a></li>
+                      <!-- <li><a href="#"><i class="fas fa-mobile-alt"></i> 9894114482</a></li> -->
+                      <li><a href="#"><i class="far fa-envelope-open"></i> info@srikaraweb.com</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="our-link1 our-link">
+                <ul>
+                  <li><a href="#" ><i class="fa fa-user s_color">&#xf51c;</i> Enquire Now</a></li>
+                    <li><a href="#"> <i class="fa fa-user s_color">&#xf007;</i> Login</a></li>
+                   
+                </ul>
+            </div>
+              <div class="text-slid-box">
+                  <div id="offer-box" class="carouselTicker">
+                      <ul class="offer-box">
+                          <li>
+                              <i class="fas fa-bullhorn"></i> SRIKARA - Tally Ceritification Courses
+                          </li>
+                          <li>
+                              <i class="fas fa-bullhorn"></i> SRIKARA - ISO Ceritification Courses
+                          </li>
+                          <li>
+                              <i class="fas fa-bullhorn"></i> SRIKARA - Software Professional training
+                          </li>
+                          <li>
+                              <i class="fas fa-bullhorn"></i>  SRIKARA - Multimedia Innovative training
+                          </li>
+                          <li>
+                              <i class="fas fa-bullhorn"></i> SRIKARA - Real time training by Industrial Experts
+                          </li>
+                          <li>
+                              <i class="fas fa-bullhorn"></i> SRIKARA - GST Practitioner : All Accounting Needs
+                          </li>
+                          <li>
+                              <i class="fas fa-bullhorn"></i> SRIKARA - Web Development 
+                          </li>
+                          <li>
+                              <i class="fas fa-bullhorn"></i> SRIKARA - Networking Services
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- End Main Top -->
+ <!-- Start Main Top -->
+ <header class="main-header">
+    <!-- Start Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+        <div class="container-fluid">
+            <!-- Start Header Navigation -->
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+                <a class="navbar-brand" href="/"><img src="{% static 'images/logo.png' %}" class="logo" alt=""></a>
+            </div>
+            <!-- End Header Navigation -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="nav-item active"><a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="{% url 'aboutus' %}">About Us</a></li>
+                    <li class="nav-item">
+                        <a href="{% url 'academy' %}" class="nav-link" >Academy
+                          
+                        </a>
+                       
+                    </li>
+                  
+                    <li class="nav-item"><a class="nav-link" href="{% url 'auditing' %}">Auditing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'solutions' %}">Web Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'syservices' %}">System Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'gallery' %}">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
+                  
+                   
+                </ul>
+            </div>
+            
+            <!-- /.navbar-collapse -->
+
+            <!-- Start Atribute Navigation -->
+            <div class="attr-nav">
+                <ul>
+                    <!-- <li class="search"><a href="#"><i class="fa fa-search"></i></a></li> -->
+                    <li class="side-menu">
+                                        
+                            <a  href="/"><img src="{% static 'images/tally.png' %}" class="logo" alt=""></a>
+                      
+                    </li>
+                </ul>
+            </div>
+            <!-- End Atribute Navigation -->
+        </div>
+        
+    </nav>
+    <!-- End Navigation -->
+</header>
+<!-- End Main Top -->
+     
+
+    
+        {% block content %}
+        {% endblock %}
+   <!-- Start Footer  -->
+   <footer>
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Business Time</h3>
+                        <ul class="list-time">
+                            <li>Monday - Friday: 10.00 am to 08.00 pm</li>
+                             <li>Saturday: 09.30 am to 08.00 pm</li>
+                              <li>Sunday: <span>09.30 am to 01.00 pm</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Newsletter</h3>
+                        <form class="newsletter-box">
+                            <div class="form-group">
+                                <input class="" type="email" name="Email" placeholder="Email Address*" />
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <button class="btn hvr-hover" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Social Media</h3>
+                        <p >Like, Share & Follow us on</p>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-widget">
+                        <h4>About SRIKARA</h4>
+                        <p class="text-justify">
+                            SRIKARA has Strong background of Charted Accounts and Tax Consultant, for 
+20 years of experience in this field, and also in Teaching Field for 15 Years.</p>
+<p class="text-justify">  Our training would be a Professionalism based on Real Time Industry ( Company oriented practical data ). 
+                        </p> 
+                        <p class="text-justify">
+                            SRIKARA provides expert guidance to learn techniques and ethics. 
+                             Unbelievable fee with incomparable syllabus with 
+Placement Assistance Guaranteed. 
+
+                        </p> 							
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="{% url 'aboutus' %}">  About Us</a></li>
+                            <li><a href="{% url 'academy' %}">  Academy</a></li>
+                            <li><a href="{% url 'auditing' %}">  Auditing </a></li>
+                            <li><a href="{% url 'solutions' %}">  Web Solutions</a></li>
+                            <li><a href="{% url 'syservices' %}">  System Services</a></li>
+                            <li><a href="{% url 'blog' %}">  Blog</a></li>
+                            <li><a href="{% url 'gallery' %}">  Gallery</a></li>
+                            <li><a href="{% url 'contact' %}">  Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link-contact">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i>
+                                    <b><u class="faw"><span class="u"> Address :</span></u></b> 
+                               
+                                    23/2, Divine Tower, 1<sup>st</sup> Floor,<br>
+                                    8<sup>th</sup> street, Crosscut Road,  Gandhipuram, <br>
+                                    Coimbatore-641 012.
+                               
+                                </p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-location-arrow"></i>
+                                    <b><u class="faw"><span class="u">  Landmark :</span></u></b>                                   
+                               
+                                  Near to the cut road of Hotel Aryaas
+                               
+                                </p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-square"></i>
+                                    <b><u class="faw"><span class="u">  Phone :</span></u></b>
+                                     <a href="">0422-4354999</a></p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-envelope">
+
+                                </i>   <b><u class="faw"><span class="u">  Email :</span></u></b>
+                                        <a href="">info@srikaraweb.com</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer  -->
+
+<!-- Start copyright  -->
+<div class="footer-copyright">
+    <p class="footer-company">All Rights Reserved.<b> &copy; 2020</b> <a href="#">
+       <b> srikaraweb.com</b></a>                   
+       <span style="text-indent: 50px;">Design By :
+        <a href="#"><b>Srikara team</b></a>
+    </span>
+    </p>
+</div>
+<!-- End copyright  -->
+
+<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+    <!-- ALL JS FILES -->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'js/jquery.superslides.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap-select.js' %}"></script>
+    <script src="{% static 'js/inewsticker.js' %}"></script>
+    <script src="{% static 'js/bootsnav.js' %}"></script>
+    <script src="{% static 'js/images-loded.min.js' %}"></script>
+    <script src="{% static 'js/isotope.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/baguetteBox.min.js' %}"></script>
+    <script src="{% static 'js/form-validator.min.js' %}"></script>
+    <script src="{% static 'js/contact-form-script.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script>
+        let modalId = $('#image-gallery');
+  
+  $(document)
+  .ready(function () {
+  
+    loadGallery(true, 'a.thumbnail');
+  
+    //This function disables buttons when needed
+    function disableButtons(counter_max, counter_current) {
+      $('#show-previous-image, #show-next-image')
+        .show();
+      if (counter_max === counter_current) {
+        $('#show-next-image')
+          .hide();
+      } else if (counter_current === 1) {
+        $('#show-previous-image')
+          .hide();
+      }
+    }
+  
+   
+    function loadGallery(setIDs, setClickAttr) {
+      let current_image,
+        selector,
+        counter = 0;
+  
+      $('#show-next-image, #show-previous-image')
+        .click(function () {
+          if ($(this)
+            .attr('id') === 'show-previous-image') {
+            current_image--;
+          } else {
+            current_image++;
+          }
+  
+          selector = $('[data-image-id="' + current_image + '"]');
+          updateGallery(selector);
+        });
+  
+      function updateGallery(selector) {
+        let $sel = selector;
+        current_image = $sel.data('image-id');
+        $('#image-gallery-title')
+          .text($sel.data('title'));
+        $('#image-gallery-image')
+          .attr('src', $sel.data('image'));
+        disableButtons(counter, $sel.data('image-id'));
+      }
+  
+      if (setIDs == true) {
+        $('[data-image-id]')
+          .each(function () {
+            counter++;
+            $(this)
+              .attr('data-image-id', counter);
+          });
+      }
+      $(setClickAttr)
+        .on('click', function () {
+          updateGallery($(this));
+        });
+    }
+  });
+  
+  // build key actions
+  $(document)
+  .keydown(function (e) {
+    switch (e.which) {
+      case 37: // left
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+          $('#show-previous-image')
+            .click();
+        }
+        break;
+  
+      case 39: // right
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+          $('#show-next-image')
+            .click();
+        }
+        break;
+  
+      default:
+        return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+  });
+  
+    
+        
+       
+  
+  
+  
+  </script>
+  <script>
+        // Get the button that opens the modal
+var btn = document.querySelectorAll(".modal-button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
+}
+  
+  </script>
+      <!-- validation form -->
+      <script>
+   
+        function validatFName() {
+        var name = document.getElementById('fn');
+        var message = document.getElementById('msgfn');
+     
+        var badColor = "red";
+        var goodColor = "green";
+        var letters = /^[a-zA-Z\s]*$/;
+
+        if (name.value.match(letters) && name.value.length >= 3) {
+            message.style.color = goodColor;
+         
+            document.getElementById("msgfn").innerHTML = "Valid";
+            return true;
+        } else {
+            message.style.color = badColor;
+            name.focus();
+            document.getElementById("msgfn").innerHTML = "not valid";
+            return false;
+        }
+    }
+
+    function validatLName() {
+        var name = document.getElementById('ln');
+        var message = document.getElementById('msgln');
+     
+        var badColor = "red";
+        var goodColor = "green";
+        var letters = /^[a-zA-Z\s]*$/;
+
+        if (name.value.match(letters) && name.value.length >= 3) {
+            message.style.color = goodColor;
+         
+            document.getElementById("msgln").innerHTML = "Valid";
+            return true;
+        } else {
+            message.style.color = badColor;
+            name.focus();
+            document.getElementById("msgln").innerHTML = "not valid";
+            return false;
+        }
+    }
+
+    function ValidateEmail() {
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var uemail = document.getElementById('uemail');
+        var message = document.getElementById('msgem');
+        var badColor = "red";
+        var goodColor = "green";
+        if (uemail.value.match(mailformat)) {
+            message.style.color = goodColor;
+            message.innerHTML = "Valid";
+            return true;
+        }
+        else {
+            uemail.focus();
+            message.style.color = badColor;
+            message.innerHTML = "not Valid";
+            return false;
+        }
+    }
+
+    function validatePhone() {
+        var ph = document.getElementById("ph");
+        var message = document.getElementById('msgph');
+        var badColor = "red";
+        var goodColor = "green";
+        if (ph.value.length == 10) {
+            message.style.color = goodColor;
+            document.getElementById("msgph").innerHTML = "valid";
+        } else {
+            message.style.color = badColor;
+            document.getElementById("msgph").innerHTML = "Invalid"
+        }
+    }
+
+    function validateGender(){
+        var genderM=f1.m.value;
+        var genderF=f1.f.value; 
+        var message = document.getElementById('msgrbg');
+        var badColor = "red";
+        var goodColor = "green";
+        if(genderM.checked==true || genderF.checked==true)
+           {
+            message.style.color = goodColor;
+                document.getElementById("msgrbg").innerHTML="valid"
+                return true;
+           } else {  
+            message.style.color = badColor;
+           document.getElementById("msgrbg").innerHTML="not valid"
+                return true;
+                }
+    }
+</script>
+</body>
+</html>
